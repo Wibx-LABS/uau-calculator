@@ -223,6 +223,62 @@ body {
     color: var(--primary);
 }
 
+/* Tooltips */
+.info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    background: var(--border);
+    color: var(--text-muted);
+    border-radius: 50%;
+    font-size: 10px;
+    cursor: help;
+    margin-left: 0.6rem;
+    position: relative;
+    transition: all 0.2s;
+    font-weight: 700;
+}
+
+.info-icon:hover {
+    background: var(--primary);
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 112, 0.3);
+}
+
+.info-icon::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: #1a1a1a;
+    border: 1px solid var(--border);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    color: var(--text-primary);
+    width: 220px;
+    white-space: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    z-index: 2000;
+    pointer-events: none;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.info-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
 /* Results Display */
 .result-card.primary {
     background: linear-gradient(135deg, #00845A 0%, #00ff70 100%);
@@ -319,6 +375,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
+    display: flex;
+    gap: 1rem;
+    background: rgba(12, 12, 12, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
 }
 
 .btn-export {
@@ -345,6 +409,27 @@ body {
 .btn-export svg {
     width: 18px;
     height: 18px;
+}
+
+.btn-clear {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-clear:hover {
+    background: rgba(240, 106, 111, 0.1);
+    border-color: var(--destructive);
+    color: var(--destructive);
 }
 
 .footer {

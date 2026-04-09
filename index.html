@@ -19,6 +19,10 @@
                 <div class="logo-dot"></div>
                 <h1>WIBX - UAU <span>Calculadora</span></h1>
             </div>
+            <div class="status-badge no-print" id="saveStatus" style="opacity: 0; transition: opacity 0.3s;">
+                <div class="pulse"></div>
+                <span id="saveStatusText">Salvo localmente</span>
+            </div>
         </header>
 
         <section class="main-grid">
@@ -44,16 +48,25 @@
 
                 <div class="manual-data-group">
                     <div class="input-group">
-                        <label>Cotação WiBX (R$)</label>
-                        <input type="number" id="inputCotacao" step="0.0001" placeholder="0.0000">
+                        <label>
+                            Cotação WiBX (R$)
+                            <span class="info-icon no-print" data-tooltip="Valor de mercado do token WiBX em Reais no momento da operação.">?</span>
+                        </label>
+                        <input type="text" id="inputCotacao" placeholder="0,0000">
                     </div>
                     <div class="input-group">
-                        <label>Quantidade WBX</label>
-                        <input type="number" id="inputQuantity" step="0.01" placeholder="0.00">
+                        <label>
+                            Quantidade WBX
+                            <span class="info-icon no-print" data-tooltip="Montante total de tokens WiBX adquiridos (Ex: Conforme print da WiBX).">?</span>
+                        </label>
+                        <input type="text" id="inputQuantity" placeholder="0,00">
                     </div>
                     <div class="input-group">
-                        <label>Valor Compra (R$)</label>
-                        <input type="number" id="inputTotalBrl" step="0.01" placeholder="R$ 0,00">
+                        <label>
+                            Valor Compra (R$)
+                            <span class="info-icon no-print" data-tooltip="Custo total da operação em Reais (Cotação × Quantidade).">?</span>
+                        </label>
+                        <input type="text" id="inputTotalBrl" placeholder="0,00">
                     </div>
                 </div>
 
@@ -68,7 +81,7 @@
 
                 <div class="results-display">
                     <div class="result-card primary">
-                        <span class="label">PONTOS UAU DISPONÍVEIS</span>
+                        <span class="label">PONTOS UAU DISPONÍVEIS <span class="info-icon no-print" data-tooltip="O total de pontos que podem ser distribuídos para a base UAU após as taxas." style="background: rgba(255,255,255,0.2); color: #fff;">?</span></span>
                         <div class="value-container">
                             <span class="value" id="resTotalWbx">0</span>
                             <span class="unit">PONTOS</span>
@@ -85,11 +98,11 @@
                             <span class="accent" id="resCotacao">AGUARDANDO...</span>
                         </div>
                         <div class="breakdown-item">
-                            <span>WiBX para Pontos (Base)</span>
+                            <span>WiBX para Pontos (Base) <span class="info-icon no-print" data-tooltip="Montante líquido em WiBX que será convertido diretamente em pontos UAU.">?</span></span>
                             <span id="resWbxBase">0,00 WBX</span>
                         </div>
                         <div class="breakdown-item">
-                            <span>Reserva de Taxas (3.5%)</span>
+                            <span>Reserva de Taxas (3.5%) <span class="info-icon no-print" data-tooltip="Porcentagem retida pela plataforma para cobrir taxas de rede e operação.">?</span></span>
                             <span id="resTaxaWbx">0,00 WBX</span>
                         </div>
                     </div>
@@ -132,7 +145,14 @@
                     <polyline points="7 10 12 15 17 10"></polyline>
                     <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
-                Exportar Relatório PDF
+                Exportar PDF
+            </button>
+            <button class="btn-clear" id="btnClearData">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                Limpar
             </button>
         </section>
 
