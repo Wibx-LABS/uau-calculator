@@ -22,7 +22,7 @@ Uma ferramenta poderosa e automatizada para análise de capacidade de campanhas 
 O projeto é 100% client-side. Para rodar:
 
 1. Clone o repositório ou baixe os arquivos.
-2. Abra o arquivo `index.html` em qualquer navegador moderno (Chrome, Edge, Safari ou Firefox).
+2. Abra o arquivo `calculadora-wibx-uau.html` em qualquer navegador moderno (Chrome, Edge, Safari ou Firefox).
 3. Certifique-se de estar conectado à internet no primeiro carregamento para que o navegador possa baixar o motor do Tesseract.js via CDN.
 
 ## 📊 Regras de Negócio
