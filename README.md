@@ -1,6 +1,20 @@
 # WIBX - UAU Calculadora 🚀
 
-Uma ferramenta poderosa e automatizada para análise de capacidade de campanhas WiBX, permitindo converter compras em pontos UAU com precisão cirúrgica.
+<p align="center">
+  <pre>
+░█▀▀░█▀█░█░░░█▀▀░█░█░█░░░█▀█░█▀▄░█▀█░█▀▄░█▀█░░░█░█░█▀█░█░█
+░█░░░█▀█░█░░░█░░░█░█░█░░░█▀█░█░█░█░█░█▀▄░█▀█░░░█░█░█▀█░█░█
+░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀░░▀▀▀░▀░▀░▀░▀░░░▀▀▀░▀░▀░▀▀▀
+  </pre>
+  <strong>Calculadora de campanha WiBX para UAU</strong>
+</p>
+
+> Uma ferramenta para análise de capacidade de campanhas WiBX, permitindo converter compras em pontos UAU com precisão cirúrgica.
+
+**Status:** Finished
+**Ownership** : [Caio Maciel](https://github.com/kvag0), [Pedro Escaleira](https://github.com/EscaleiraP)
+
+---
 
 ## ✨ Funcionalidades
 
@@ -33,4 +47,6 @@ O projeto é 100% client-side. Para rodar:
 
 ---
 
-**Powered by LABS | WiBX Company**
+<p align="center">
+  <strong>Built and maintained by the Wibx Labs team. Internal use only.</strong>
+</p>
