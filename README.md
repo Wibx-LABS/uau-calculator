@@ -11,9 +11,7 @@
 
 > Uma ferramenta para análise de capacidade de campanhas WiBX, permitindo converter compras em pontos UAU com precisão cirúrgica.
 
-**Status:** Finished
-**Ownership** : [Caio Maciel](https://github.com/kvag0), [Pedro Escaleira](https://github.com/EscaleiraP)
-
+**Status:** Delivered
 ---
 
 ## ✨ Funcionalidades
